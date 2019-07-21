@@ -14,4 +14,8 @@ urlpatterns = [
 
     #strona szczegółowa dotycząca pojedynczego tematu
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name = 'topic'),
+
+    #strona przeznaczona do dodawania nowego tematu
+    url(r'^new_topic/$', views.new_topic, name = 'new_topic'),
+
 ]
