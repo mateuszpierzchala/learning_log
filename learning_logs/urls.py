@@ -18,4 +18,7 @@ urlpatterns = [
     #strona przeznaczona do dodawania nowego tematu
     url(r'^new_topic/$', views.new_topic, name = 'new_topic'),
 
+    #strona przeznaczona do dodawania nowego wpisu
+    url(r'^new_entry/(?P<topic_id>\d+)/$', views.new_entry, name = 'new_entry'),
+
 ]
